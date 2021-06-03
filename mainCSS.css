@@ -1,8 +1,13 @@
+section{
+    background-image: radial-gradient(circle, chocolate,#00CED1, #AEDD81);
+}
+section.certificate{
+    background-image:linear-gradient(to bottom right,#00CED1,chocolate);
 
-
+}
 a {
     cursor: cell;
-    color: cornflowerblue;
+    color: darkolivegreen;
     text-after-overflow:underline;
     text-align: center;
 }
