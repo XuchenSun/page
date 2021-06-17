@@ -1,0 +1,17 @@
+/**leetcode 1365
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var smallerNumbersThanCurrent = function(nums) {
+    var smaller_numbers=0;
+    for(let i=0;i<nums.length;i++){
+        let first_number=nums[0];
+        if(nums[i]<first_number){
+            smaller_numbers++;
+        }
+         
+       
+    }
+    return smaller_numbers;
+    
+};
