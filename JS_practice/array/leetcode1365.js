@@ -20,7 +20,7 @@ var smallerNumbersThanCurrent = function(nums) {
  
          
        
-   
+   // console.log(array_of_smaller_number);// test if it correct
     return array_of_smaller_number;
     
 };
