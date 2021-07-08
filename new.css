@@ -330,3 +330,9 @@ footer i {
         text-align: center;
     }
 }
+span .code{
+opacity: 0.7;
+}
+span:hover.code{
+    opacity: 1;
+}

@@ -7,9 +7,14 @@ section.certificate{
 }
 a {
     cursor: cell;
-    color: darkolivegreen;
-    text-after-overflow:underline;
+    color: #1f1f1f;
+
     text-align: center;
+}
+a:hover{
+    color: #be3144;
+    border: #817bc6;
+    border-radius: 10px;
 }
 h1{
     color: chocolate;
@@ -17,6 +22,7 @@ h1{
    text-shadow: black 1px 1px 2px;
     text-align: center;
 }
+
 h4{
     color: darkorange;
     text-align: center;
