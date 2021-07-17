@@ -1,8 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
 <link
         rel="stylesheet"
-        href="new.css"
+        href="new2.css"
 
 />
+  <style>
+    ul{padding: 0; list-style: none;}
+    .swiper-list{
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+    .swiper-main {
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .swiper-item{
+      height: 100%;
+      display: inline;
+      position: absolute;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .swiper-spot{
+      width: 100%;
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 10px;
+    }
+    .swiper-spot .spot-item{
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin-left: 10px;
+    }
+    .swiper-spot .spot-item:nth-of-type(1) {
+      margin-left: 0;
+    }
+
+    .leftBtn{
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+    }
+    .rightBtn{
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
 <nav id="navbar" class="nav">
   <ul class="nav-list">
     <li>
@@ -22,11 +91,7 @@
 
 <!-- START WELCOME SECTION -->
 
-<section id="welcome-section" class="welcome-section">
-  <h1>Welcome, I am Xuchen</h1>
-  <p>a software developer</p>
-
-</section>
+<div class="swiper-list"></div>
 
 <!-- END WELCOME SECTION -->
 
@@ -244,3 +309,42 @@
 
 <!-- END FOOTER SECTION -->
 
+</body>
+<script src="image_sliders.js"></script>
+<script>
+  console.time();
+  let imgArr = [
+    {
+      url: '#',
+      imgPath: 'images/me.jpg'
+    },
+    {
+      url: '#',
+      imgPath: 'images/me1.jpg'
+    },
+    {
+      url: '#',
+      imgPath: 'images/me2.jpg'
+    },
+    {
+      url: '#',
+      imgPath: 'images/me3.jpg'
+    },
+    {
+      url: '#',
+      imgPath: 'images/me4.jpg'
+    }
+  ];
+  // let imgArr = ['i.jpg', 'o.jpg', 'q.jpeg'];
+  // let imgArr = ['i.jpg', 'o.jpg'];
+  // let imgArr = ['i.jpg'];
+  new Swiper({
+    imgArr: imgArr,
+    aniTIme: 1005,
+    intervalTime: 1005,
+    autoplay: true
+  }).init();
+  console.timeEnd();
+
+</script>
+</html>
