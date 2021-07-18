@@ -74,13 +74,13 @@
 			// left button
 			this.leftBtn = document.createElement('img');
 			this.leftBtn.className = 'leftBtn';
-			this.leftBtn.src = '../left.png';
+			this.leftBtn.src = 'left.png';
 			this.swiperListDom.appendChild(this.leftBtn)
 
 			// right button
 			this.rightBtn = document.createElement('img');
 			this.rightBtn.className = 'rightBtn';
-			this.rightBtn.src = '../right.png';
+			this.rightBtn.src = 'right.png';
 			if (this.imgArr.length===1) {
 				this.leftBtn.style.display = 'none';
 				this.rightBtn.style.display = 'none';
