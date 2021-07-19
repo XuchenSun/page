@@ -1,0 +1,23 @@
+<%- include header %>
+        <div class="container">
+        <% arts.forEach(function(art) { %>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2 group-center">
+                    <div class="article-box">
+                        <a href="/detail/<%= art._id %>">
+                            <h3 class="text-center"><%= art.title %></h3>
+                        </a>
+                        <p class="text-center">
+                            <span class="label label-info"><%= art.tag %></span> |
+                            <span class="create-time">
+                                <span class="text-bold">时间:</span>
+                                <%= art.createTime %>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+    </body>
+</html>
