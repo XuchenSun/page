@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Payment Page</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="stylesheet" href="payment.css">
+        <link rel="stylesheet" href="button_test.css">
+
+    </head>
+    <body>
+        <div >
+            <h1>PAYMENT</h1>
+            <form action="" method="get"> 
+                <p style="font-size: x-large">1. Select your plan</p>
+                <label style="color: #c62133"><input name="plan" type="radio" value="" />BASIC </label>
+                <label style="color: #abb63a"><input name="plan" type="radio" value="" />ADVANCED </label>
+                <label style="color:#389db6"><input name="plan" type="radio" value="" />PRO </label>
+            </form> 
+            <div class="billing" style="margin-top: 50px;width: 45%">
+                <p style="font-size: x-large">2. Billing Information</p>
+                <form action="" method="post">
+                  <label id="lbName" style="text-transform: uppercase">Name</label>
+                  <br/>
+                    <label>
+                        <input type="text" class="class1" placeholder="Mathew Mozaff"/>
+                    </label>
+                    <br/>
+                  <br/>
+                  <label style="text-transform: uppercase" >Billing Address</label>
+                  <br/>
+                    <label>
+                        <input class="class1" type="text" placeholder="Your Address"/>
+                    </label>
+                    <br/>
+                  <br/>
+                  <label id="lbCity">City</label>
+                  <label id="lbpost">Postcode</label>
+                  <br/>
+                    <label for="city"></label><input type="text" id="city"/>
+                    <label for="postalCode"></label><input type="text" id="postalCode"/>
+                  <br/>  
+                  <br/> 
+                  <label style="text-transform: uppercase">Country</label>
+                  <br/>
+                    <label>
+                        <select class="class1">
+                          <option>Choose...</option>
+                          <option>Afghanistan</option>
+                          <option>Angola</option>
+                          <option>Armenia</option>
+                          <option>Azerbaijan</option>
+                          <option>Canada</option>
+                          <option>China</option>
+                          <option>France</option>
+                          <option>Germany</option>
+                          <option>Japan</option>
+                          <option>United States</option>
+                        </select>
+                    </label>
+
+                    <br/>
+                  <br/>
+                    <label for="agree"></label><input type="checkbox" name="checkbox" id="agree" />By continuing, I acknowledge that I have<br>
+                  read to the Terms of Service & Privacy Policy. 
+                  <br/>
+                  <br/>
+                  <input type="submit" disabled="disabled" value="Download" id="submit" style="position:absolute;left: 12%;top:80%" /> <br/>
+                  <br/>
+                </form>
+            </div>
+
+            <div class="card" style="margin-top: 50px;width: 50%">
+              <p style="font-size: x-large">3. Credit Card Information</p>
+              <form action="" method="post">
+                <label id="lbCarholderName">CARDHOLDER'S NAME</label>  
+                <br/>
+                  <label>
+                      <input type="text" class="class1" placeholder="Full Name"/>
+                  </label>
+                  <br/>
+                <br/>
+                <label>CARD NUMBER</label> 
+                <br/>
+                  <label>
+                      <input class="class1" type="text" placeholder="4444 5555 6666 7777 88"/>
+                  </label>
+                  <br/>
+                <br/>
+                <label id="lbMonth">EXPIRY MONTH</label>
+                <label id="lbYear">EXPIRY YEAR</label>
+                <br/>
+                  <label for="month"></label><select id="month">
+                  <option>Choose...</option>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                  <label for="year"></label><select id="year">
+                  <option>Choose...</option>
+                  <option>2017</option>
+                  <option>2018</option>
+                  <option>2019</option>
+                  <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                  <option>2023</option>
+                  <option>2024</option>
+                  <option>2025</option>
+                </select>
+                <br/>  
+                <br/> 
+                <label id="lbCVV">CVV</label>
+                <br/>
+                  <label>
+                      <input type="text" class="class1"/>
+                  </label>
+                  <br/>
+                <br/>
+              </form>
+              <footer>2021 Created By Xuchen </footer>
+            </div>
+            
+        </div>
+
+        <button class="button_on_payment_page" id="last_page_button" style="position: absolute; left: 8%;top:80%" onclick="submitfunction()" >
+            <span>DOWNLOAD</span>
+        </button>
+    </body>
+    <script src="button_test.js">
+        function submitfunction(){
+            document.getElementById("submit").disabled="able";
+        }
+    </script>
+</html>

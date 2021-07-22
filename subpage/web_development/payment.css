@@ -1,0 +1,70 @@
+
+
+
+.class1{
+  float:left;
+  width:350px;
+}
+#city{
+  float:left;
+  width:150px;
+}
+#postalCode{
+  float:left;
+  margin-left: 38px;
+  text-transform: uppercase;
+}
+#lbCity{
+  float:left;
+  text-transform: uppercase;
+}
+#lbpost{
+  float:left;
+  margin-left: 162px;
+  text-transform: uppercase;
+}
+
+
+#submit{
+  background-color: green;
+  width: 80px;
+  height: 35px;
+  border-radius: 7px;
+}
+
+#lbMonth{
+  float:left;
+}
+#lbYear{
+  float:left;
+  margin-left: 70px;
+}
+
+#month{
+  float:left;
+  width:160px;
+}
+
+#year{
+  float:left;
+  width: 160px;
+  margin-left: 32px;
+}
+
+.billing{
+  float:left;
+  width:400px;
+}
+
+.card{
+  float:left;
+  width:400px;
+  margin-left: 20px;
+}
+
+body{
+  margin-left: 40px;
+}
+h1{
+  margin-top:80px;
+}

@@ -1,0 +1,228 @@
+body{
+    background-color: black;
+}
+h1.h1_main{
+    color: #dddddd;
+    margin: 100px 50px 0px 50px;
+    font-family: 'Lato', sans-serif;
+}
+h2.h2_main{
+    color: #dddddd;
+    margin: 20px 50px 0px 50px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 5px;
+}
+
+
+/*Pricing page */
+
+
+
+
+
+li {
+    list-style: none;
+}
+
+
+
+/** global classes styling **/
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+}
+
+
+
+
+
+
+#pricing {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.product1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+
+}
+
+.product1 > .level {
+
+    color:#c62133;
+    padding: 15px 0px 15px 80%;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.product1 > h2 {
+    margin-top: 5px;
+    color:#c62133;
+    font-size: xxx-large;
+}
+
+
+
+.product1 > ol {
+    margin: 15px 0;
+}
+
+.product1 > ol > li {
+    padding: 5px 0;
+    color:white;
+    text-align: left;
+    font-size: x-large;
+}
+
+.product1 > button {
+    border: 0;
+
+    background-color:#c62133;
+    font-weight: 500;
+    color:white;
+    border-radius: 40%;
+    width: 25%;
+}
+
+
+
+
+
+
+
+
+
+.product2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+
+}
+
+.product2 > .level {
+
+    color:#abb63a;
+    padding: 15px 0px 15px 80%;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.product2 > h2 {
+    margin-top: 5px;
+    color:#abb63a;
+    font-size: xxx-large;
+}
+
+
+
+.product2 > ol {
+    margin: 15px 0;
+}
+
+.product2 > ol > li {
+    padding: 5px 0;
+    color:white;
+    text-align: left;
+    font-size: x-large;
+}
+
+.product2 > button {
+    border: 0;
+
+    background-color:#abb63a;
+    font-weight: 500;
+    color:white;
+    border-radius: 40%;
+    width: 25%;
+}
+
+
+
+.product3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+
+}
+
+.product3 > .level {
+
+    color:#389db6;
+    padding: 15px 0px 15px 80%;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: left;
+    font-weight: bold;
+
+
+}
+
+.product3 > h2 {
+    margin-top: 5px;
+    color:#389db6;
+    font-size: xxx-large;
+}
+
+
+
+.product3 > ol {
+    margin: 5px 0;
+
+}
+
+.product3 > ol > li {
+    padding: 5px 0;
+    color:white;
+   text-align: left;
+    font-size: x-large;
+}
+
+.product3 > button {
+    border: 0;
+    margin: 15px 0;
+    background-color:#389db6;
+    font-weight: 400;
+    color:white;
+    border-radius: 40%;
+    width: 25%;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HomePage</title>
+        <meta name="description" content="">
+        <meta name="author" content="Xuchen Sun">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="button2.css">
+        <link rel="stylesheet" href="CTAbutton.css">
+
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"><!--incase lower version of ie cannot usecss3-->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet" type="text/css"/>
+
+        <script src="http://code.jquery.com/jquery-1.11.0.js"></script><!--session 1-->
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+    <div class="container">
+        <div class="nav">
+            <label for="nav1"></label><input type="radio" name="radio-set" disabled="disabled" checked id="nav1">
+            <a href="#panel1" style="background-color:transparent;"></a>
+            <label for="nav2"></label><input type="radio" name="radio-set" disabled="disabled" id="nav2">
+            <a href="#panel2" style="background-color:transparent;"></a>
+
+            <label for="nav3"></label><input type="radio" name="radio-set" disabled="disabled" id="nav3">
+            <a href="#panel3" style="background-color:transparent;"></a>
+            <label for="nav4"></label><input type="radio" name="radio-set" disabled="disabled" id="nav4">
+            <a href="#panel4" style="background-color:transparent;"></a>
+            <label for="nav5"></label><input type="radio" name="radio-set" disabled="disabled" id="nav5">
+            <a href="#panel5" style="background-color:transparent;"></a>
+            <label for="nav6"></label><input type="radio" name="radio-set" disabled="disabled" id="nav6">
+            <a href="#panel6" style="background-color:transparent;"></a>
+
+
+            <div class="scroll">
+                <section class="panel" id="panel1">
+                    <div class="bn-alp">
+                        <h1 class="title">WEB DEVELOPMENT PROJECT ONE</h1>
+                        <h2 class="subTitle" style="left: 60%"> A Cool Website<br/>
+
+                        </h2>
+
+
+                        <a  onclick="window.location.href='subpage/PricingPage.html'" class="CTAbtn"  style="position: absolute;z-index: 100;top: 64%;left: 35%;">TRY IT NOW</a>
+                        <ul class="box">
+                            <li class="on">
+                                <img alt="loading" src="images/I1.jpg" class="bg" />
+                            </li>
+                            <li>
+                                <img alt="loading" src="images/I2.jpg" class="bg" />
+                            </li>
+                            <li>
+                                <img alt="loading" src="images/I3.jpg" class="bg" />
+                            </li>
+
+                        </ul>
+                        <div class="i"></div>
+                    </div>
+                </section>
+                <section class="panel panelColor" id="panel2" style="background-image: url(images/red_page.png);background-repeat: no-repeat;background-size: 100%">
+
+
+                    <button class="button" id="button_in_page2_try_it_now" onclick="window.location.href='subpage/PricingPage.html'">
+                        <span>TRY IT NOW</span>
+                    </button>
+                    <audio id="music_in_second_page" src="music/a_new_guy.wav" ></audio>
+
+
+                    <button type="button" id="button_play_music" data-playing="false" role="switch" aria-checked="false" style="width: 140px;height: 140px;border-radius:50%;background-color: red;animation: mix 5s linear infinite;
+                            border: 1px solid #d5d5d5;position: absolute;left: 73%;top: 82%">
+                        <span style="color: white;font-size: large">CLICK</span>
+                    </button>
+                    <button class="button" id="but_p2_s" onclick="window.location.href='subpage/PricingPage.html'" style="left: 9%; top:73%;width: 20%;height: 10%">
+                        <span>SEE DEMO</span>
+                    </button>
+
+                </section>
+                <section class="panel" id="panel3" style="background-image: url(images/yellow_page.png);background-repeat: no-repeat;background-size: 100%">
+
+                    <button class="button" id="button_in_page3_try_it_now" onclick="window.location.href='subpage/PricingPage.html'">
+                        <span style="color: #abb63a">TRY IT NOW</span>
+                    </button>
+                    <button class="button" id="button_in_page3_see_demo" onclick="window.location.href='subpage/PricingPage.html'" style="left: 45%; top:65%;width: 20%;height: 10%">
+                        <span style="color: #abb63a">SEE DEMO</span>
+                    </button>
+                </section>
+                <section class="panel panelColor" id="panel4" style="background-image: url(images/black_page.png);background-repeat: no-repeat;background-size: 100%">
+
+
+                    <a style="position:absolute; z-index: 100;left: 70%; top: 15%;text-decoration: none;align-items: center;" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
+                </section>
+                <section class="panel" id="panel5" style="background-image: url(images/blue_page.png);background-repeat: no-repeat;background-size: 100%">
+
+                    <button class="button" id="but_p5" onclick="window.location.href='subpage/PricingPage.html'">
+                        <span style="color:skyblue">TRY IT NOW</span>
+                    </button>
+                </section>
+                <section class="panel panelColor" id="panel6" style="background-image: url(images/black2_page.png);background-repeat: no-repeat;background-size: 100%">
+
+                    <a style="position:absolute; z-index: 100;left: 70%; top: 40%;text-decoration: none;align-items: center;" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
+                </section>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+
+        /*===================Page2: Click Button2=====================*/
+        document.querySelector('#button_in_page2_try_it_now').onmousemove = function (click_button_in_page) {
+
+            let x = click_button_in_page.pageX - click_button_in_page.target.offsetLeft;
+            let y = click_button_in_page.pageY - click_button_in_page.target.offsetTop;
+
+            click_button_in_page.target.style.setProperty('--x', x + 'px');
+            click_button_in_page.target.style.setProperty('--y', y + 'px');
+
+        };
+        document.querySelector('#button_in_page3_try_it_now').onmousemove = function (click_button_in_page) {
+
+            let x = click_button_in_page.pageX - click_button_in_page.target.offsetLeft;
+            let y = click_button_in_page.pageY - click_button_in_page.target.offsetTop;
+
+            click_button_in_page.target.style.setProperty('--x', x + 'px');
+            click_button_in_page.target.style.setProperty('--y', y + 'px');
+
+        };
+
+        document.querySelector('#but_p5').onmousemove = function (click_button_in_page) {
+
+            let x = click_button_in_page.pageX - click_button_in_page.target.offsetLeft;
+            let y = click_button_in_page.pageY - click_button_in_page.target.offsetTop;
+
+            click_button_in_page.target.style.setProperty('--x', x + 'px');
+            click_button_in_page.target.style.setProperty('--y', y + 'px');
+
+        };
+
+        /*===================Button See Demo=====================*/
+        //"but" means button,"p2" means page2 and "s" means see demo
+        document.querySelector('#but_p2_s').onmousemove = function (click_button_in_page2) {
+
+
+            let x = click_button_in_page2.pageX - click_button_in_page2.target.offsetLeft;
+            let y = click_button_in_page2.pageY - click_button_in_page2.target.offsetTop;
+
+            click_button_in_page2.target.style.setProperty('--x', x + 'px');
+            click_button_in_page2.target.style.setProperty('--y', y + 'px');
+        };
+        document.querySelector('#button_in_page3_see_demo').onmousemove = function (click_button_see_demo_in_page3) {
+
+            let x_button_in_page3_see_demo = click_button_see_demo_in_page3.pageX - click_button_see_demo_in_page3.target.offsetLeft;
+            let y_button_in_page3_see_demo = click_button_see_demo_in_page3.pageY - click_button_see_demo_in_page3.target.offsetTop;
+
+            click_button_see_demo_in_page3.target.style.setProperty('--x', x_button_in_page3_see_demo + 'px');
+            click_button_see_demo_in_page3.target.style.setProperty('--y', y_button_in_page3_see_demo + 'px');
+        };
+        /*===================Page2: Button play music=====================*/
+
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+
+        const audioContext = new AudioContext();
+        // get the audio element
+        const audioElement = document.querySelector('#music_in_second_page');
+
+        // pass it into the audio context
+        const track = audioContext.createMediaElementSource(audioElement);
+        track.connect(audioContext.destination);
+        // select our play button
+        const playButton = document.querySelector('#button_play_music');
+
+        playButton.addEventListener('click', function() {
+
+            // check if context is in suspended state (autoplay policy)
+            if (audioContext.state === 'suspended') {
+                audioContext.resume();
+            }
+
+            // play or pause track depending on state
+            if (this.dataset.playing === 'false') {
+                audioElement.play();
+                this.dataset.playing = 'true';
+            } else if (this.dataset.playing === 'true') {
+                audioElement.pause();
+                this.dataset.playing = 'false';
+            }
+
+        }, false);
+        audioElement.addEventListener('ended', () => {
+            playButton.dataset.playing = 'false';
+        }, false);
+
+    </script>
+
+    </body>
+
+</html>
