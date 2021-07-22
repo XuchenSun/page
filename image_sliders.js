@@ -133,7 +133,7 @@
 		},
 		eventBind() {
 			let that = this;
-			// 上一张事件绑定
+
 			this.leftBtn.addEventListener('mouseover', function() {
 				clearInterval(that.timer);
 			})
