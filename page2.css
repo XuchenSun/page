@@ -67,17 +67,15 @@ a{
     left:28.57%;
 }
 #nav4,#nav4 + a{
-    left:43.85%;
+    left:45.85%;
 }
 #nav5,#nav5 + a{
-    left:58.14%;
+    left:65.14%;
 }
 #nav6,#nav6 + a{
-    left:74.42%;
+    left:80.42%;
 }
-#nav7,#nav7 + a{
-    left:85.71%;
-}
+
 
 .nav input:checked + a,
 .nav input:checked:hover +a{
@@ -102,9 +100,21 @@ a{
     left:50%;
     margin-left:-45px;
     opacity:0.3;
+
     animation: nav_triangle_color_animation 2s 9999;
 
 }
+@keyframes mix {
+    30% {
+        box-shadow: 0 -1em 2em 3em rgba(255, 0, 200, 0.5), 4em -1em 2em 3em rgba(255, 50, 0, 0.8), -4em 2em 3em 2em rgba(155, 200, 0, 0.5), -4em -2em 2em 2em rgba(200, 0, 150, 0.6), 0 3em 2em 2em rgba(20, 250, 0, 0.5), 2em 1em 2em 2em rgba(50, 10, 250, 0.5);
+    }
+    60% {
+        box-shadow: 2em 1em 2em 3em rgba(55, 0, 200, 0.5), 3em 1em 2em 3em rgba(25, 150, 0, 0.6), 3em -2em 3em 3em rgba(155, 200, 0, 0.5), -4em 2em 2em 3em rgba(200, 0, 50, 0.6), 0 -3em 2em 3em rgba(200, 250, 0, 0.5), -2em 1em 2em 3em rgba(50, 210, 250, 0.6);
+    }
+}
+
+
+
 @keyframes nav_triangle_color_animation{
 
     0% {border-bottom-color: #389db6;opacity: 0.4;}
@@ -116,9 +126,10 @@ a{
 .nav input:hover + a{
 
     width: 3vm;
-    animation: nav_a_hover_animation_background 2s 9999;
+    animation: animation_background 2s 9999;
+
 }
-@keyframes nav_a_hover_animation_background{
+@keyframes animation_background{
     0% {background: #389db6;opacity: 0.4;}
     25% {background: #81b665;opacity: 0.5;}
     50% {background: #b66e6d;opacity: 0.6;}
@@ -281,7 +292,7 @@ a{
 .bn-alp .box li img.bg { display:none; }  
 .bn-alp .i { bottom:100px; left:50%; margin-left:-50px; text-align:center; position:absolute; z-index:100;}  
 .bn-alp .i i { display:inline-block; margin-right:10px; width:16px; height:16px; border: 2px solid white; border-radius: 16px; background: #000; cursor:pointer; }
-.bn-alp .i i.on { background:#ff6600; }
+.bn-alp .i i.on { animation: animation_background 2s 9999; }
 
 
 .big_title{
@@ -289,15 +300,16 @@ a{
     z-index: 100; 
     top:30%;
     left:34%;
-    animation: nav_a_animation 2s 9999;
+    color:white;
     font-size: 10vm;
 }
+
 .small_title{
     position:absolute; 
     z-index: 100; 
     top:40%;
     left:58%;
-    animation: nav_a_animation 2s 9999;
+    color:white;
     font-size: 300%;
 }
 .btnCTA{
@@ -308,7 +320,8 @@ a{
     color: black;
     font-size: 40px;
     border-radius: 30px;
-    background-color: rgb(255, 0, 242);
+    animation: mix 5s linear infinite;
 }
 
 /*==========================================*/
+
