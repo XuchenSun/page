@@ -50,11 +50,9 @@
 			}
 			this.swiperSpotDom.innerHTML = spotLi;
 
-			// if (this.autoplay) {
-			// 	this.timer = setInterval(this.nextSlider.bind(this, this.aniTIme), this.intervalTime);
-			// }
 
-			// 上一张，下一张，小圆点绑定点击事件
+
+
 			this.eventBind()
 
 		},
@@ -74,13 +72,13 @@
 			// left button
 			this.leftBtn = document.createElement('img');
 			this.leftBtn.className = 'leftBtn';
-			this.leftBtn.src = 'left.png';
+			this.leftBtn.src = 'left11.png';
 			this.swiperListDom.appendChild(this.leftBtn)
 
 			// right button
 			this.rightBtn = document.createElement('img');
 			this.rightBtn.className = 'rightBtn';
-			this.rightBtn.src = 'right.png';
+			this.rightBtn.src = 'right11.png';
 			if (this.imgArr.length===1) {
 				this.leftBtn.style.display = 'none';
 				this.rightBtn.style.display = 'none';
