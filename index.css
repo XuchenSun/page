@@ -193,6 +193,11 @@ img {
     margin: 0 auto;
     margin-bottom: 6rem;
 }
+.projects-grid a {
+
+    width: 30%;
+
+}
 
 @media (max-width: 30.625em) {
     .projects-section {
