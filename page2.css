@@ -1,4 +1,4 @@
-/*===================for all sections=====================*/
+/*===================All Page=====================*/
 *{
     margin:0;
     padding:0;
@@ -34,6 +34,19 @@ a{
     bottom:0;
     font-family:"Josefin Slab","Myriad pro" ,serif;
 }
+.nav input{
+    opacity:0;
+    z-index:1000;
+}
+.nav a{
+    z-index:10;
+    font-weight:800;
+    font-size:1.5vw;
+    color:#fff;
+    text-align:center;
+
+
+}
 .nav input,.nav a{
     width:20%;
     height:34px;
@@ -42,58 +55,76 @@ a{
     bottom:0;
     cursor:pointer;
 }
-.nav input{
-    opacity:0;
-    z-index:1000;
-}
-.nav a{
-    z-index:10;
-    font-weight:700;
-    font-size:16px;
-    color:#fff;
-    text-align:center;
-    text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
 
-}
+
 #nav1,#nav1 + a{
-    left:0%;
+    left:0;
 }
 #nav2,#nav2 + a{
-    left:16.66%;
+    left:13.28%;
 }
 #nav3,#nav3 + a{
-    left:33.33%;
+    left:28.57%;
 }
 #nav4,#nav4 + a{
-    left:50%;
+    left:43.85%;
 }
 #nav5,#nav5 + a{
-    left:66.66%;
+    left:58.14%;
 }
 #nav6,#nav6 + a{
-    left:83.33%;
+    left:74.42%;
+}
+#nav7,#nav7 + a{
+    left:85.71%;
 }
 
 .nav input:checked + a,
 .nav input:checked:hover +a{
 
+    animation: nav_a_animation 2s 9999;
+}
+@keyframes nav_a_animation{
+    0% {color: #389db6;opacity: 0.4;}
+    25% {color: #81b665;opacity: 0.5;}
+    50% {color: #b66e6d;opacity: 0.6;}
+    75% {color: #a26fb6;opacity: 0.7;}
+    100% {color: #2935b6;opacity: 0.9;}
 }
 .nav input:checked + a:after{
     content:"";
     width:0;
     height:0;
     overflow:hidden;
-    border:20px solid transparent;
-    border-bottom-color:#821134;
+    border:45px solid transparent;
     position:absolute;
     bottom:100%;
     left:50%;
-    margin-left:-20px;
+    margin-left:-45px;
+    opacity:0.3;
+    animation: nav_triangle_color_animation 2s 9999;
+
+}
+@keyframes nav_triangle_color_animation{
+
+    0% {border-bottom-color: #389db6;opacity: 0.4;}
+    25% {border-bottom-color: #81b665;opacity: 0.5;}
+    50% {border-bottom-color: #b66e6d;opacity: 0.6;}
+    75% {border-bottom-color: #a26fb6;opacity: 0.7;}
+    100% {border-bottom-color:#2935b6;opacity: 0.9;}
 }
 .nav input:hover + a{
-    background:#AD244f;
-}
 
+    width: 3vm;
+    animation: nav_a_hover_animation_background 2s 9999;
+}
+@keyframes nav_a_hover_animation_background{
+    0% {background: #389db6;opacity: 0.4;}
+    25% {background: #81b665;opacity: 0.5;}
+    50% {background: #b66e6d;opacity: 0.6;}
+    75% {background: #a26fb6;opacity: 0.7;}
+    100% {background: #2935b6;opacity: 0.9;}
+}
 
 .scroll,.panel{
     width:100%;
@@ -114,11 +145,11 @@ a{
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transition: all 0.6s ease-in-out;
-    -moz-transition: all 0.6s ease-in-out;
-    -o-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
-    color:#e23a6e;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    color:#ff6600;
     font-weight:bold;
 }
 .panel{
@@ -127,34 +158,39 @@ a{
 }
 /*animation*/
 #nav1:checked ~ .scroll #panel1 h1{
-    -webkit-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    -o-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    -webkit-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    -o-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    animation: moveDown 0.5s ease-in-out 0.15s backwards;
 }
 #nav2:checked ~ .scroll #panel2 h1{
-    -webkit-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    -o-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    -webkit-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    -o-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    animation: moveDown 0.5s ease-in-out 0.15s backwards;
 }
 #nav3:checked ~ .scroll #panel3 h1{
-    -webkit-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    -o-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    -webkit-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    -o-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    animation: moveDown 0.5s ease-in-out 0.15s backwards;
 }
 #nav4:checked ~ .scroll #panel4 h1{
-    -webkit-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    -o-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    -webkit-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    -o-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    animation: moveDown 0.5s ease-in-out 0.15s backwards;
 }
 #nav5:checked ~ .scroll #panel5 h1{
-    -webkit-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    -o-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    -webkit-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    -o-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    animation: moveDown 0.5s ease-in-out 0.15s backwards;
 }
 #nav6:checked ~ .scroll #panel6 h1{
-    -webkit-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    -o-animation: moveDown 0.6s ease-in-out 0.2s backwards;
-    animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    -webkit-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    -o-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    animation: moveDown 0.5s ease-in-out 0.15s backwards;
+}
+#nav7:checked ~ .scroll #panel7 h1{
+    -webkit-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    -o-animation: moveDown 0.5s ease-in-out 0.15s backwards;
+    animation: moveDown 0.5s ease-in-out 0.15s backwards;
 }
 @keyframes moveDown {
     0%{
@@ -222,7 +258,7 @@ a{
 }
 
 .panelColor{
-    background:#fa96b5;
+    background:#ff6600;
     color:#fff;
 }
 
@@ -230,38 +266,39 @@ a{
     font-size:60px;
     font-weight:bolder;
 }
-@media screen and (max-device-width: 520px){
+@media screen and (max-device-width: 600px){
  
 }
 
 
 
 /*====================session 1=========================*/
-.bn-alp { width:100%; height: 758px;  }  
+.bn-alp { width:100%; height: 758px;  }
 .bn-alp ul,.bn-alp li { margin:0; padding:0; list-style:none; }  
 .bn-alp .box { height:100%; position:relative; }  
-.bn-alp .box li { width:100%; height:758px; background-position:50% 50%; background-size:cover; position:absolute; top:0; left:0; z-index:10; }  
+.bn-alp .box li { width:100%; height:758px; background-position:50% 50%; background-size:cover; position:absolute; top:0; left:0; z-index:10; }
 .bn-alp .box li.on { z-index:99; }  
 .bn-alp .box li img.bg { display:none; }  
 .bn-alp .i { bottom:100px; left:50%; margin-left:-50px; text-align:center; position:absolute; z-index:100;}  
-.bn-alp .i i { display:inline-block; margin-right:10px; width:16px; height:16px; border: 2px solid white; border-radius: 16px; background: #000; cursor:pointer; }  
-.bn-alp .i i.on { background:white; } 
+.bn-alp .i i { display:inline-block; margin-right:10px; width:16px; height:16px; border: 2px solid white; border-radius: 16px; background: #000; cursor:pointer; }
+.bn-alp .i i.on { background:#ff6600; }
 
 
-.title{
+.big_title{
     position: absolute; 
     z-index: 100; 
-    top:50%; 
-    left:15%; 
-    color: white;
+    top:30%;
+    left:34%;
+    animation: nav_a_animation 2s 9999;
+    font-size: 10vm;
 }
-.subTitle{
+.small_title{
     position:absolute; 
     z-index: 100; 
-    top:60%; 
-    left:30%; 
-    color: white;
-    font-size: 30px;
+    top:40%;
+    left:58%;
+    animation: nav_a_animation 2s 9999;
+    font-size: 300%;
 }
 .btnCTA{
     position:absolute; 
