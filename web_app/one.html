@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>.Popup-MaskData {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9999999999999;
+    display: none;
+  }
+
+  .PopupData {
+
+    width: 300px;
+    height: 200px;
+    background-color: #FEFEFE;
+    text-align: center;
+    position: fixed;
+    left: 40%;
+    top: 35%;
+  }</style>
+</head>
+<body>
+<button >Click me</button>
+
+<div class="Popup-MaskData">
+  <div class="PopupData">
+    <div class="currency-title">
+      <span>新增账户</span>
+    </div>
+    <ul class="add-itme">
+      <li>
+        <span>账号：</span>
+        <input type="text">
+      </li>
+      <li>
+        <span>密码：</span>
+        <input type="text">
+      </li>
+    </ul>
+      <div class="but-war">
+        <button type="button" style="width: 100%;background-color: #1494FE;border: #1494FE;color: #FFF;line-height: 25px;">保存</button>
+      </div>
+  </div>
+</div>
+<script>
+  $(document).click(function() {
+
+    $(".Popup-MaskData").hide();
+  })
+  $("#xz").click(function() {
+
+    event.stopPropagation();//阻止任何父事件处理程序被执行，点击新增不会触发全局事件
+    $(".Popup-MaskData").show();
+  })
+  $(".Popup-MaskData").click(function(){
+
+    event.stopPropagation();
+  })
+  $("#bc").click(function(){
+
+    $(".Popup-MaskData").hide();
+  })
+</script>
+</body>
+</html>
