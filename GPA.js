@@ -9,5 +9,4 @@ var GPAT=0;
 for(let x=0;x<s.length;x++){
     GPAT=GPAT+GPA(s[x])
 }
-console.log(GPAT/19);
-console.log(GPAT/19);
+
